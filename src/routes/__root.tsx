@@ -29,14 +29,13 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Armando Lunenburg Tuinverzorging" },
+      { name: "description", content: "Hovenier in Uden, Veghel & Oss — 25 jaar vakmanschap in tuinontwerp, aanleg en onderhoud." },
+      { name: "author", content: "Armando Lunenburg Tuinverzorging" },
+      { property: "og:title", content: "Armando Lunenburg Tuinverzorging" },
+      { property: "og:description", content: "Hovenier in Uden, Veghel & Oss — 25 jaar vakmanschap in tuinontwerp, aanleg en onderhoud." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
       {

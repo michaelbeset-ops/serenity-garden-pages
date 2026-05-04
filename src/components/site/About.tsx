@@ -51,10 +51,10 @@ export function About() {
                 en dat is precies wat dit vak zo mooi maakt.
               </p>
               <p>
-                Of het nu gaat om een complete herinrichting of gewoon een goede onderhoudsbeurt —
+                Of het nu gaat om een complete herinrichting of gewoon een goede onderhoudsbeurt,
                 u krijgt eerlijk advies, vakwerk en een lekker bakkie koffie erbij.
               </p>
-              <p className="text-cream/60">— Armando Lunenburg</p>
+              <p className="text-cream/60">Armando Lunenburg</p>
             </div>
 
             <div className="mt-12 grid grid-cols-2 gap-y-6 border-t border-cream/15 pt-8 sm:grid-cols-4">

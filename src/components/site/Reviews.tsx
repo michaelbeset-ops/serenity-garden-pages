@@ -34,11 +34,12 @@ export function Reviews() {
           </h2>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="-mx-6 overflow-x-auto px-6 md:mx-0 md:overflow-visible md:px-0">
+          <div className="flex snap-x snap-mandatory gap-6 pb-4 md:grid md:grid-cols-3 md:pb-0">
           {reviews.map((r, i) => (
             <figure
               key={r.name}
-              className={`flex flex-col rounded-2xl border border-border bg-card p-8 transition-all hover:-translate-y-1 hover:shadow-xl ${
+              className={`min-w-[85vw] shrink-0 snap-center flex flex-col rounded-2xl border border-border bg-card p-8 transition-all hover:-translate-y-1 hover:shadow-xl md:min-w-0 md:shrink ${
                 i === 1 ? "md:translate-y-6" : ""
               }`}
             >
@@ -56,6 +57,7 @@ export function Reviews() {
               </figcaption>
             </figure>
           ))}
+          </div>
         </div>
       </div>
     </section>

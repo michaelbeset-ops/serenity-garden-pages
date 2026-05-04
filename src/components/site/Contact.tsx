@@ -60,7 +60,7 @@ export function Contact() {
               </a>
               <div className="flex items-center gap-4 py-4 text-cream/70">
                 <MapPin className="h-5 w-5 text-moss" />
-                <span className="text-sm">Uden &amp; omstreken — wij komen naar u toe</span>
+                <span className="text-sm">Uden &amp; omstreken · wij komen naar u toe</span>
               </div>
             </div>
           </div>

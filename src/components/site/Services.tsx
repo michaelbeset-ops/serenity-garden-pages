@@ -5,7 +5,7 @@ import work1 from "@/assets/work-1.jpg";
 const services = [
   { title: "Tuinontwerp", desc: "Van eerste schets tot 3D-impressie.", featured: true },
   { title: "Tuinaanleg & renovatie", desc: "Volledige herinrichting met oog voor detail." },
-  { title: "Tuinonderhoud", desc: "Jaarcontract of losse beurt — altijd vakwerk." },
+  { title: "Tuinonderhoud", desc: "Jaarcontract of losse beurt, altijd vakwerk." },
   { title: "Bedrijfstuinen", desc: "Een groene visitekaartje voor uw onderneming." },
   { title: "Sproei­installaties", desc: "Onzichtbaar comfort voor een gezonde tuin." },
   { title: "Bestrating & timmerwerk", desc: "Terrassen, paden, schuttingen en pergola's." },
@@ -32,11 +32,11 @@ export function Services() {
         </div>
 
         {/* Asymmetric mosaic grid */}
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-6 md:grid-rows-[14rem_14rem_14rem]">
+        <div className="grid grid-cols-2 gap-4 sm:grid-cols-6 md:grid-rows-[14rem_14rem_14rem]">
           {/* Featured large with image */}
           <a
             href="#contact"
-            className="group relative col-span-1 overflow-hidden rounded-2xl bg-forest-deep sm:col-span-3 md:row-span-2"
+            className="group relative col-span-2 overflow-hidden rounded-2xl bg-forest-deep sm:col-span-3 md:row-span-2"
           >
             <img
               src={work1}
@@ -45,17 +45,17 @@ export function Services() {
               className="absolute inset-0 h-full w-full object-cover opacity-70 transition-all duration-700 group-hover:scale-105 group-hover:opacity-80"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-forest-deep via-forest-deep/40 to-transparent" />
-            <div className="relative flex h-full min-h-[28rem] flex-col justify-end p-8 text-cream">
+            <div className="relative flex h-full min-h-[20rem] flex-col justify-end p-6 text-cream sm:min-h-[28rem] sm:p-8">
               <div className="text-[10px] uppercase tracking-[0.28em] text-cream/70">
                 Onze specialiteit
               </div>
-              <h3 className="mt-2 font-serif text-3xl font-light md:text-4xl">
+              <h3 className="mt-2 font-serif text-2xl font-light sm:text-3xl md:text-4xl">
                 Tuinontwerp
               </h3>
               <p className="mt-2 max-w-xs text-sm text-cream/80">
                 Een tuin die past bij uw huis, uw leven en uw seizoenen.
               </p>
-              <div className="mt-6 inline-flex items-center gap-2 text-sm">
+              <div className="mt-4 inline-flex items-center gap-2 text-sm sm:mt-6">
                 Lees meer{" "}
                 <ArrowUpRight className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
               </div>
@@ -63,12 +63,12 @@ export function Services() {
           </a>
 
           {services.slice(1, 3).map((s) => (
-            <ServiceTile key={s.title} {...s} className="sm:col-span-3" />
+            <ServiceTile key={s.title} {...s} className="col-span-1 sm:col-span-3" />
           ))}
           {services.slice(3, 5).map((s) => (
-            <ServiceTile key={s.title} {...s} className="sm:col-span-2" />
+            <ServiceTile key={s.title} {...s} className="col-span-1 sm:col-span-2" />
           ))}
-          <ServiceTile {...services[5]} className="sm:col-span-2" />
+          <ServiceTile {...services[5]} className="col-span-2 sm:col-span-2" />
         </div>
 
         <p className="mt-10 text-sm text-muted-foreground">
@@ -94,18 +94,18 @@ function ServiceTile({
   return (
     <a
       href="#contact"
-      className={`group relative overflow-hidden rounded-2xl border border-border bg-card p-7 transition-all duration-500 hover:border-forest-deep/30 hover:bg-forest-deep ${className}`}
+      className={`group relative overflow-hidden rounded-2xl border border-border bg-card p-5 transition-all duration-500 hover:border-forest-deep/30 hover:bg-forest-deep sm:p-7 ${className}`}
     >
       <div className="flex h-full flex-col justify-between">
         <div>
-          <h3 className="font-serif text-2xl font-light text-ink transition-colors group-hover:text-cream">
+          <h3 className="font-serif text-lg font-light text-ink transition-colors group-hover:text-cream sm:text-2xl">
             {title}
           </h3>
-          <p className="mt-2 text-sm leading-relaxed text-muted-foreground transition-colors group-hover:text-cream/75">
+          <p className="mt-1.5 text-xs leading-relaxed text-muted-foreground transition-colors group-hover:text-cream/75 sm:mt-2 sm:text-sm">
             {desc}
           </p>
         </div>
-        <div className="mt-6 inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] text-forest-deep transition-all group-hover:text-cream">
+        <div className="mt-4 inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] text-forest-deep transition-all group-hover:text-cream sm:mt-6">
           Lees meer
           <ArrowUpRight className="h-3.5 w-3.5 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
         </div>

@@ -5,7 +5,7 @@ import { useReveal } from "@/hooks/use-reveal";
 const faqs = [
   {
     q: "Werkt u met een vaste prijs of op uurbasis?",
-    a: "Voor projecten als ontwerp, aanleg en renovatie krijgt u altijd een heldere, vaste offerte. Voor onderhoud bieden we zowel jaarcontracten als losse beurten — wat het beste past bij uw tuin en wensen.",
+    a: "Voor projecten als ontwerp, aanleg en renovatie krijgt u altijd een heldere, vaste offerte. Voor onderhoud bieden we zowel jaarcontracten als losse beurten, wat het beste past bij uw tuin en wensen.",
   },
   {
     q: "Hoe lang duurt het voordat u kunt starten?",
@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     q: "Werkt u alleen of met een team?",
-    a: "Armando werkt met een vast, eigen team van vakmensen. Geen wisselende ZZP'ers — bij u thuis komt steeds dezelfde, vertrouwde ploeg.",
+    a: "Armando werkt met een vast, eigen team van vakmensen. Geen wisselende ZZP'ers, bij u thuis komt steeds dezelfde, vertrouwde ploeg.",
   },
 ];
 

@@ -49,18 +49,22 @@ export function Pillars() {
             </h2>
           </div>
 
-          <div className="grid gap-10 sm:grid-cols-3 lg:col-span-7 lg:gap-8">
-            {pillars.map((p) => (
-              <div key={p.title} className="group">
-                <div className="mb-6 text-forest-deep transition-transform duration-500 group-hover:-translate-y-1">
-                  {p.icon}
-                </div>
-                <h3 className="font-serif text-xl text-ink">{p.title}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                  {p.body}
-                </p>
+          <div className="lg:col-span-7">
+            <div className="-mx-6 overflow-x-auto px-6 sm:mx-0 sm:overflow-visible sm:px-0">
+              <div className="flex snap-x snap-mandatory gap-10 pb-4 sm:grid sm:grid-cols-3 sm:overflow-visible sm:pb-0 lg:gap-8">
+                {pillars.map((p) => (
+                  <div key={p.title} className="min-w-[78vw] shrink-0 snap-center group sm:min-w-0 sm:shrink">
+                    <div className="mb-6 text-forest-deep transition-transform duration-500 group-hover:-translate-y-1">
+                      {p.icon}
+                    </div>
+                    <h3 className="font-serif text-xl text-ink">{p.title}</h3>
+                    <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                      {p.body}
+                    </p>
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
           </div>
         </div>
       </div>

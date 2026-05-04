@@ -38,7 +38,7 @@ export function Hero() {
           </h1>
 
           <p className="mt-7 max-w-xl text-pretty text-lg leading-relaxed text-cream/80 [animation-delay:200ms] animate-[var(--animate-fade-up)] opacity-0">
-            25 jaar vakmanschap in tuinontwerp, aanleg en onderhoud — in
+            25 jaar vakmanschap in tuinontwerp, aanleg en onderhoud in
             Uden, Veghel, Oss en omstreken.
           </p>
 

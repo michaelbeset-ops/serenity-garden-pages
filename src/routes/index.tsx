@@ -14,13 +14,13 @@ import { Footer } from "@/components/site/Footer";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Armando Lunenburg Tuinverzorging — Hovenier in Uden, Veghel & Oss" },
+      { title: "Armando Lunenburg Tuinverzorging | Hovenier in Uden, Veghel & Oss" },
       {
         name: "description",
         content:
           "25+ jaar vakmanschap in tuinontwerp, aanleg en onderhoud in Uden, Veghel, Oss, Heesch, Bernheze en Nistelrode. Plan een vrijblijvende afspraak.",
       },
-      { property: "og:title", content: "Armando Lunenburg Tuinverzorging — Hovenier in Uden e.o." },
+      { property: "og:title", content: "Armando Lunenburg Tuinverzorging | Hovenier in Uden e.o." },
       {
         property: "og:description",
         content:
